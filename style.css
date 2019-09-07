@@ -1,0 +1,220 @@
+body {
+    font-family: Avenir;
+}
+
+
+img {
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.introduction {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    padding-left: 60px;
+    
+}
+
+.introduction h1 {
+    font-size: 18px;
+    color: #999;
+}
+
+.introduction h1 span {
+    color: #000;
+    font-size: 32px;
+    font-variant: small-caps;
+    font-family: 'Times New Roman';
+    
+}
+
+.tabs {
+/*    width: 180px;*/
+    padding-left: 0px;
+
+}
+
+.tabs li {
+    list-style: none;
+}
+.tabs a {
+    
+    font-weight: lighter;
+    font-size: 18px;
+    color: #ccc;
+    line-height: 200%;
+    text-decoration: none;
+}
+
+.tabs a.active {
+    color: #444;
+    
+}
+
+.tabs a:hover {
+    color: #fac05e;
+}
+
+.contact {
+    position: fixed;
+    bottom: 40px;
+    left: 60px;
+    
+}
+
+.contact p {
+    line-height: 200%;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #444444;
+}
+
+.menu {
+    position: fixed;
+    overflow-x: hidden;
+    width: 200px;
+    top: 0;
+    left: 0;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    visibility: hidden;
+}
+
+.menu a {
+    font-family: "Avenir next";
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 0px 0px 0px;
+    margin: 15px 10px 15px 0px;
+    color: #b4b4b4;
+}
+
+.menu a:active {
+    color: #696969;
+    padding: 10px 10px 10px 10px;
+    border-left: 2px solid #123455;
+    
+}
+
+.menu a:hover {
+    color: #123455;
+}
+
+.proj1 {
+    padding-top: 30vh;
+    position: absolute;
+    left: 45vw;
+    width: 50vw;
+    
+}
+
+.proj1 p {
+    margin: 40px 0px 90px 110px;
+    color: #444;
+    line-height: 200%;
+    font-size: 21px;
+}
+
+.proj1 h2 {
+    
+    font-size: 24px;
+    font-weight: lighter;
+    color: #fff;
+    /*    margin-top: 30vh;*/
+    padding-bottom: 30px;
+    /*    margin-left: 40px;*/
+    font-family: 'PT Sans';
+}
+
+.proj1 h2 span {
+    color: #444;
+    font-size: 46px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.proj1 h2 span #s2 {
+    color: #fff;
+}
+
+#col {
+    margin-top: 120px;
+    visibility: hidden;
+    column-count: 2;
+/*    column-width: 10vw;*/
+}
+
+#col p {
+    margin: 20px 0px 10px 0px;
+    font-size: 18px;
+    color: #777;
+}
+
+
+/* The Animation */
+
+.trans {
+    animation: fadein 0.5s;
+    transition: 1s;
+    transform: translateY(-40px);
+    /*    margin-top: 50%;*/
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes expand {
+    
+}
+
+
+/*  Parallelograms */
+
+.parallelogram {
+    position: fixed;
+    margin-top: 45px;
+    margin-left: 55px;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    background: yellow;
+    transform: skewX(-15deg);
+}
+
+#large {
+    width: 180px;
+    height: 40px;
+}
+
+#hl1 {
+    position: absolute;
+    margin: 160px 0px 0px 105px;
+    top: 30vh;
+    left: 45vw;
+    width: 66px;
+    height: 35px;
+}
+
+/*#hl2 {*/
+/*    position: absolute;*/
+/*    margin: 160px 0px 0px 87px;*/
+/*    top: 30vh;*/
+/*    left: 45vw;*/
+/*}*/
+
+.vl {
+    position: fixed;
+    top: 0;
+    left: 50vw;
+    height: 100%;
+    width: 400px;
+    background-color: #FBD2CB;
+}
