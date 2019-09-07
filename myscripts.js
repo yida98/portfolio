@@ -6,8 +6,6 @@ function toggleVisibility() {
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
         col.style.visibility = "visible";
         col.classList.add("trans");
-    } else {
-        col.style.visibility = "hidden";
     }
 };
 
@@ -20,6 +18,14 @@ function changeActivity(event) {
     if ((event.target.classList.contains("active")) == false) {
         activeElement.classList.remove("active");
         event.target.classList.add("active");
+    }
+    
+    if (event.target.id == "painter"){
+        document.getElementById("type1").style.display = "none";
+        document.getElementById("type2").style.display = "block";
+    } else {
+        document.getElementById("type1").style.display = "block";
+        document.getElementById("type2").style.display = "none";
     }
 }
 
