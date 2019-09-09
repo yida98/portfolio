@@ -18,6 +18,8 @@ function toggleVisibility() {
 
 window.onbeforeunload = function() {
     window.scrollTo(0, 0);
+    productSec.style.display = "none";
+    painterSec.style.display = "none";
 }
 
 function changeActivity(event) {
