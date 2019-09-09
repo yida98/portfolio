@@ -46,21 +46,12 @@ window.onload = function() {
     if (path.indexOf("#paintings") > -1){
         showPainting();
         painterEl.classList.add("active");
-        painterSec.classList.add("trans1");
         productEl.classList.remove("active");
-        if (productSec.classList.contains("trans1")) {
-            productSec.classList.remove("trans1");
-        }
     } else {
         showProduct();
         productEl.classList.add("active");
-        hideTransible();
-        productSec.classList.add("trans1");
-        
         painterEl.classList.remove("active");
-        if (painterSec.classList.contains("trans1")) {
-            painterSec.classList.remove("trans1");
-        }
+        hideTransible();
     }
 }
 
@@ -73,6 +64,12 @@ function hideTransible() {
 }
 
 function showProduct() {
+    if (!productSec.classList.contains("trans1")) {
+        productSec.classList.add("trans1");
+    }
+    if (painterSec.classList.contains("trans1")) {
+        painterSec.classList.remove("trans1");
+    }
     productSec.style.visibility = "visible";
     productSec.style.display = "block";
     painterSec.style.display = "none";
@@ -80,6 +77,12 @@ function showProduct() {
 }
 
 function showPainting() {
+    if (!painterSec.classList.contains("trans1")) {
+        painterSec.classList.add("trans1");
+    }
+    if (productSec.classList.contains("trans1")) {
+        productSec.classList.remove("trans1");
+    }
     painterSec.style.visibility = "visible";
     productSec.style.display = "none";
     painterSec.style.display = "block";
