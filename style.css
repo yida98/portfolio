@@ -166,6 +166,20 @@ img:hover {
     font-size: 16px;
 }
 
+#type2 {
+    position: absolute;
+    margin-top: 30vh;
+    padding-bottom: 140px;
+    left: 55vw;
+    width: 400px;
+/*    visibility: hidden;*/
+
+}
+
+#type2 img {
+    width: calc(400px - 10vw)!important;
+    margin: 30px 0px 30px 0px;
+}
 
 /* The Animation */
 
