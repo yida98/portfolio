@@ -109,8 +109,8 @@ img:hover {
     position: absolute;
     margin-top: 30vh;
     padding-bottom: 140px;
-    left: 45vw;
-    width: 620px;
+    left: calc(50vw - 65px);
+    width: 640px;
     visibility: hidden;
 }
 
@@ -171,7 +171,7 @@ img:hover {
     padding-bottom: 140px;
     left: 55vw;
     width: 400px;
-/*    visibility: hidden;*/
+    visibility: hidden;
 
 }
 
