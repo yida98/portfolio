@@ -109,6 +109,7 @@ img:hover {
 #type1 {
     position: absolute;
     margin-top: 30vh;
+    padding-bottom: 140px;
     left: 45vw;
     width: 50vw;
     visibility: hidden;
@@ -118,8 +119,14 @@ img:hover {
     position: relative
 }
 
+.proj1 #scroll {
+    margin: 10px 0px 10px 110px;
+    width: 30px;
+    opacity: 1;
+}
+
 .proj1 p {
-    margin: 40px 0px 90px 110px;
+    margin: 40px 0px 20px 110px;
     color: #444;
     line-height: 200%;
     font-size: 21px;
@@ -132,13 +139,13 @@ img:hover {
     color: #fff;
     /*    margin-top: 30vh;*/
     padding-bottom: 30px;
-    /*    margin-left: 40px;*/
+        margin-left: -45px;
     font-family: 'PT Sans';
 }
 
 .proj1 h2 span {
     color: #444;
-    font-size: 46px;
+    font-size: 80px;
     font-weight: bold;
     font-variant: small-caps;
 }
@@ -156,7 +163,7 @@ img:hover {
 
 #col p {
     margin: 20px 0px 10px 0px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -177,9 +184,12 @@ img:hover {
 
 .transout {
     animation: fadeout 0.5s;
-    transition: 1s;
-    transform: translateY(+40px);
+    transition: 0.5s;
     /*    margin-top: 50%;*/
+}
+
+.moveupdown {
+    animation: MoveUpDown 2s linear infinite;
 }
 
 @keyframes fadein {
@@ -197,6 +207,14 @@ img:hover {
     to   { opacity: 0; }
 }
 
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
 
 /*  Parallelograms */
 
@@ -218,7 +236,7 @@ img:hover {
 
 #hl1 {
     position: absolute;
-    margin: 153px 0px 0px 105px;
+    margin: 196px 0px 0px 105px;
     width: 66px;
     height: 35px;
 }
@@ -238,19 +256,33 @@ img:hover {
     width: 400px;
     background-size: 100% 200%;
 /*    background-color: #4ecdc4;*/
-    background-image: linear-gradient(to bottom, #4ecdc4 50%, #FBD2CB 50%);
+    background-image: linear-gradient(to bottom, #4cb5ae 50%, #FBD2CB 50%);
     background-position: 0 00%;
 }
 
 
 #vl.product {
-    background-image: linear-gradient(to bottom, #4ecdc4 50%, #FBD2CB 50%);
+    background-image: linear-gradient(to bottom, #4cb5ae 50%, #FBD2CB 50%);
     transition: background-position 1s;
     background-position: 0 00%;
 }
 
 #vl.painter {
-    background-image: linear-gradient(to top, #FBD2CB 50%, #4ecdc4 50%);
+    background-image: linear-gradient(to top, #FBD2CB 50%, #4cb5ae 50%);
     transition: background-position 1s;
     background-position: 0 100%;
+}
+/*other green: #4ecdc4*/
+
+span.hl {
+    background-color: rgba(255, 255, 0, 0.8);
+    
+}
+
+span.title {
+    font-size: 24px;
+    line-height: 300%;
+    font-weight: bold;
+    color: #274044;
+/*    font-family: 'Times New Roman';*/
 }

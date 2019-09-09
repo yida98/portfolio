@@ -4,6 +4,7 @@ var productEl = document.getElementById("product");
 var productSec = document.getElementById("type1");
 var painterSec = document.getElementById("type2");
 var vl = document.getElementById("vl");
+var scroll = document.getElementById("scroll");
 
 window.onscroll = function() {toggleVisibility()}
 
@@ -11,6 +12,7 @@ function toggleVisibility() {
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
         col.style.visibility = "visible";
         col.classList.add("trans");
+        disableScroll();
     }
 };
 
@@ -74,6 +76,7 @@ function showProduct() {
     productSec.style.display = "block";
     painterSec.style.display = "none";
     vl.style.backgroundPosition = "top left";
+    loadScroll();
 }
 
 function showPainting() {
@@ -87,4 +90,21 @@ function showPainting() {
     productSec.style.display = "none";
     painterSec.style.display = "block";
     vl.style.backgroundPosition = "bottom left";
+}
+
+function loadScroll() {
+    if (scroll.classList.contains("transout")) {
+        scroll.classList.remove("transout");
+    }
+    scroll.classList.add("moveupdown");
+    scroll.style.visibility = "visible";
+}
+
+function disableScroll() {
+    if (scroll.classList.contains("moveupdown")) {
+        scroll.classList.remove("moveupdown");
+    }
+    scroll.classList.add("transout")
+    scroll.style.visibility = "hidden";
+    
 }
