@@ -16,14 +16,19 @@ function toggleVisibility() {
     }
 };
 
-window.onbeforeunload = function() {
-    window.scrollTo(0, 0);
+window.onload = function() {
     productSec.style.display = "none";
     painterSec.style.display = "none";
+    
+}
+
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
 }
 
 function changeActivity(event) {
     var activeElement = document.getElementsByClassName("active")[0];
+    window.scrollTo(0, 0);
     if ((event.target.classList.contains("active")) == false) {
         activeElement.classList.remove("active");
         event.target.classList.add("active");
