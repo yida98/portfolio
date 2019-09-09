@@ -111,6 +111,7 @@ img:hover {
     margin-top: 30vh;
     left: 45vw;
     width: 50vw;
+    visibility: hidden;
 }
 
 .proj1 {

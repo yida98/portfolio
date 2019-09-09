@@ -73,14 +73,14 @@ function hideTransible() {
 }
 
 function showProduct() {
-    
+    productSec.style.visibility = "visible";
     productSec.style.display = "block";
     painterSec.style.display = "none";
     vl.style.backgroundPosition = "top left";
 }
 
 function showPainting() {
-    
+    painterSec.style.visibility = "visible";
     productSec.style.display = "none";
     painterSec.style.display = "block";
     vl.style.backgroundPosition = "bottom left";
