@@ -3,6 +3,7 @@ var painterEl = document.getElementById("painter");
 var productEl = document.getElementById("product");
 var productSec = document.getElementById("type1");
 var painterSec = document.getElementById("type2");
+var vl = document.getElementById("vl");
 
 window.onscroll = function() {toggleVisibility()}
 
@@ -25,32 +26,40 @@ function changeActivity(event) {
     }
     
     if (event.target.id == "painter"){
-        document.getElementById("type1").style.display = "none";
-        document.getElementById("type2").style.display = "block";
+        showPainting();
+        
+        if (vl.classList.contains("product")) { vl.classList.remove("product");
+        }
+        vl.classList.add("painter");
     } else {
-        document.getElementById("type1").style.display = "block";
-        document.getElementById("type2").style.display = "none";
+        showProduct();
         hideTransible();
+        
+        if (vl.classList.contains("painter")) { vl.classList.remove("painter");
+        }
+        vl.classList.add("product");
     }
 }
 
 window.onload = function() {
     var path = window.location.href;
     if (path.indexOf("#paintings") > -1){
+        showPainting();
         painterEl.classList.add("active");
-        painterSec.classList.add("trans1")
+        painterSec.classList.add("trans1");
         productEl.classList.remove("active");
         if (productSec.classList.contains("trans1")) {
-            productSec.classList.remove("trans1")
+            productSec.classList.remove("trans1");
         }
     } else {
+        showProduct();
         productEl.classList.add("active");
         hideTransible();
-        productSec.classList.add("trans1")
+        productSec.classList.add("trans1");
         
         painterEl.classList.remove("active");
         if (painterSec.classList.contains("trans1")) {
-            painterSec.classList.remove("trans1")
+            painterSec.classList.remove("trans1");
         }
     }
 }
@@ -61,4 +70,18 @@ function hideTransible() {
     if (col.classList.contains("trans")) {
         col.classList.remove("trans");
     }
+}
+
+function showProduct() {
+    
+    productSec.style.display = "block";
+    painterSec.style.display = "none";
+    vl.style.backgroundPosition = "top left";
+}
+
+function showPainting() {
+    
+    productSec.style.display = "none";
+    painterSec.style.display = "block";
+    vl.style.backgroundPosition = "bottom left";
 }
