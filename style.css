@@ -21,7 +21,7 @@ img:hover {
 }
 
 .introduction h1 {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #999;
 }
 
@@ -45,7 +45,7 @@ img:hover {
 .tabs a {
     
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #ccc;
     line-height: 200%;
     text-decoration: none;
@@ -70,7 +70,7 @@ img:hover {
 .contact p {
     line-height: 200%;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 0.75em;
     color: #999;
 }
 
@@ -128,12 +128,12 @@ img:hover {
     margin: 40px 0px 20px 110px;
     color: #444;
     line-height: 200%;
-    font-size: 21px;
+    font-size: 1.3125em;
 }
 
 .proj1 h2 {
     
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: lighter;
     color: #fff;
     /*    margin-top: 30vh;*/
@@ -149,7 +149,7 @@ img:hover {
     font-variant: small-caps;
 }
 
-.proj1 h2 span #s2 {
+#s2 {
     color: #fff;
 }
 
@@ -162,12 +162,12 @@ img:hover {
 
 #col p {
     margin: 20px 0px 10px 0px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 #type2 {
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 15vh;
     padding-bottom: 140px;
     left: 55vw;
     width: 400px;
@@ -298,7 +298,7 @@ span.ul {
 }
 
 span.title {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 300%;
     font-weight: bold;
     color: #274044;
