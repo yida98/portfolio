@@ -20,7 +20,18 @@ img:hover {
     
 }
 
+.introduction img {
+    position: fixed;
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid #FFD629;
+    
+}
+
 .introduction h1 {
+/*    margin-top: 15px;*/
+    transform: skewX(+15deg);
+    padding-top: 5px;
     font-size: 1.125em;
     color: #999;
 }
@@ -34,6 +45,7 @@ img:hover {
 }
 
 .tabs {
+    position: fixed;
 /*    width: 180px;*/
     padding-left: 0px;
 
@@ -190,6 +202,7 @@ img:hover {
 }
 
 .trans1 {
+/*    animation-delay: 2s;*/
     animation: fadein1 1.25s;
     transition: 1.75s;
 }
@@ -232,12 +245,12 @@ img:hover {
 /*  Parallelograms */
 
 .parallelogram {
-    position: fixed;
-    margin-top: 45px;
-    margin-left: 55px;
+    position: static;
+    margin-top:145px;
+/*    margin-left: 55px;*/
     width: 50px;
     height: 25px;
-    display: inline-block;
+/*    display: inline-block;*/
     background: yellow;
     transform: skewX(-15deg);
 }
@@ -246,7 +259,6 @@ img:hover {
     width: 180px;
     height: 40px;
 }
-
 #hl1 {
     position: absolute;
     margin: 196px 0px 0px 105px;
