@@ -122,12 +122,12 @@ img:hover {
     margin-top: 30vh;
     padding-bottom: 140px;
     left: calc(50vw - 65px);
-    width: 640px;
+    width: 48vw;/*640px;*/
     visibility: hidden;
 }
 
 .proj1 {
-    position: relative
+    position: relative;
 }
 
 .proj1 #scroll {
