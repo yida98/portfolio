@@ -1,0 +1,100 @@
+body {
+    font-family: Avenir, Arial;
+    margin: 200px 140px 200px 140px;
+    line-height: 200%;
+}
+
+h1 {
+    font-size: 8em;
+    padding-bottom: 40px;
+    color: #4cb5ae;
+    font-variant: small-caps;
+}
+
+h2 {
+    color: #274044;
+    font-size: 2em;
+    
+}
+
+h3 {
+    color: #444;/*#4cb5ae;*/
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+/*    display: block;*/
+/*    text-align: right;*/
+}
+
+h4 {
+    
+    color: #444;
+}
+
+p {
+    color: #777;
+    font-size: 1em;
+}
+
+.col {
+    column-count: 2;
+}
+
+.sec {
+/*    margin: 100px 0px 0px 0px;*/
+}
+
+#iaimage {
+    width: 100%;
+}
+
+#ia {
+    padding-top: 40px;
+}
+
+#full {
+}
+
+.a {
+    padding-bottom: 30px;
+}
+
+#back {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    text-decoration: none;
+    margin-top: 50px;
+    color: #ccc;
+}
+
+#ui {
+    
+}
+
+.bgimage {
+    margin-left: -140px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: calc(100% + 280px);
+}
+
+#arrows {
+/*    visibility: hidden;*/
+    position: absolute;
+}
+
+.trans {
+    animation: fadein 0.5s;
+    transition: 1s;
+    /*    margin-top: 50%;*/
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/*.image {*/
+/*    visible: hidden;*/
+/*    margin-top: 30px;*/
+/*}*/
