@@ -52,6 +52,7 @@ p {
 }
 
 #full {
+    position: relative;
 }
 
 .a {
@@ -69,7 +70,15 @@ p {
 }
 
 #ui {
-    
+    position:absolute;
+    z-index: -1;
+}
+
+#arrows {
+    visibility: hidden;
+    position: relative;
+    transition: transform .2s;
+
 }
 
 .bgimage {
@@ -79,11 +88,14 @@ p {
     width: calc(100% + 280px);
 }
 
-#arrows {
-/*    visibility: hidden;*/
-    position: absolute;
+.bgimageabs {
+    
+    margin-left: -140px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
 }
-
+    
 .trans {
     animation: fadein 0.5s;
     transition: 1s;
